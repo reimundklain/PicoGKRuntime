@@ -387,7 +387,7 @@ public:
     {
         PKTRACE(Voxels_IntersectImplicit);
         
-        Voxels oVox(oVoxelSize(), fBackgroundMM());
+        Voxels oVox(oVoxelSize(), m_nSdfNarrowBand);
         
         CoordBBox oBBox = m_roGrid->evalActiveVoxelBoundingBox();
         
